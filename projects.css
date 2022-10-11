@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.div1 {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(65, 65, 71);
+}
+
+.sidebar {
+    background-color: rgb(65, 65, 71);
+    font-family: "Fira Sans", sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: green;
+}
+
+.main {
+    background-color: #0D1117;
+    width: 100%;
+    color: green;
+    height: 100%;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamBur {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    margin: 10px;
+}
+
+.cross {
+    margin-left: 150px;
+}
+
+.main-container {
+    margin: 0 auto;
+    padding: 0 25px;
+    text-align: center;
+    max-width: 1600px;
+}
+
+.red {
+    font-family: inherit;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: darkred;
+}
+.green {
+    color: #7EB77F;
+}
+
+.projects {
+    padding-top: 100px;
+    max-width: 1200px;
+}
+.page-title {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title img {
+    height: 35px;
+    width: 45px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.page-title h2 {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+}
+.project-cards-container {
+    margin-top: 50px;
+    height: fit-content;
+    height: -moz-fit-content;
+}
+section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-top: 8vh;
+}
+section .hyperlink {
+    color: darkred;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+section .hyperlink:hover {
+    color: green;
+}
+
+.section-description {
+    margin: 32px auto 0 auto;
+    text-align: center;
+    max-width: 1000px;
+    line-height: 1.5em;
+    letter-spacing: 0.025em;
+    font-size: 1.5em;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 900;
+}
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    color: #1D263B;
+}
+
+.card:not(:last-child) {
+    margin: 0 auto 2em auto;
+}
+
+.card-preview-img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    background-color: white;
+}
+
+.card-info {
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+}
+
+.has-no-preview .card-info {
+    border-radius: 10px;
+}
+
+.title-and-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #1D263B;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.project-links a i {
+    padding: 5px;
+}
+
+.project-links a i {
+    color: #F08CAE;
+    font-size: 1.2em;
+    transition: all 0.2s ease;
+}
+
+.project-links a i:hover {
+    font-size: 1.25em;
+    padding: 2px 5px;
+    color: #7EB77F;
+}
+
+.project-links a:last-child {
+    margin-left: 5px;
+}
+
+.project-skills {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #7EB77F;
+}
+
+.project-skills span {
+    color: #0FA3B1;
+    font-weight: 700;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+}
+
+.project-skills span:not(:last-child) {
+    margin-right: 10px;
+}
+
+.project-description {
+    color: #1D263B;
+}
+
+
+.foot {
+    background-color: rgb(3, 17, 46);
+    text-align: center;
+    color: white;
+    height: 7em;
+}
+
+.foot .footInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot .footInfo button {
+    margin: 1em;
+    list-style: none;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(6, 5, 54);
+    cursor: pointer;
+}
+
+.foot .b1 {
+    color: blue;
+}
+
+.foot .b2 {
+    color: green;
+}
+
+.foot .b3 {
+    color: palevioletred;
+}
+
+.foot .blue {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .green {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .pink {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .footInfo .b1:hover {
+    background-color: blue;
+    color: white;
+}
+
+.foot .footInfo .b2:hover {
+    background-color: green;
+    color: white;
+}
+
+.foot .footInfo .b3:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+.foot .copy {
+    font-size: 16px;
+}
+
+.foot .copy p {
+    color: green;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 1310px) {
+
+
+    .sidebar {
+        position: absolute;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+  
+
+}

@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.div1 {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(65, 65, 71);
+}
+
+.sidebar {
+    background-color: rgb(65, 65, 71);
+    font-family: "Fira Sans", sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: green;
+}
+
+.main {
+    background-color: #0D1117;
+    width: 100%;
+    color: green;
+    height: 100vh;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamBur {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    margin: 10px;
+}
+
+.cross {
+    margin-left: 150px;
+}
+
+.infoContact {
+    padding: 5em;
+    font-size: 16px;
+}
+
+.infoContact h2 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.form-info {
+    margin-top: 3em;
+    margin-left: 23em;
+}
+.form-label {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Source Code Pro", monospace;
+    letter-spacing: 0.02em;
+}
+.form-control {
+    font-size: 1.2em;
+    margin-top: 0.2em;
+    width: 25em;
+    color: green;
+    font-weight: bold;
+    font-family: "Source Code Pro", monospace;
+}
+.form-text {
+    margin: 0.3em;
+    font-size: 1.12em;
+    letter-spacing: 0.02em;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+}
+.form-check {
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+.form-check-input {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.buttons {
+    margin-top: 2.5em;
+    font-size: 16px;
+}
+
+.buttons .btn-primary {
+    padding: 0.6em 2em;
+    border-radius: 2em;
+    color: #0D1117;
+    background-color: green;
+    border: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.buttons .btn-primary:hover {
+    background-color: black;
+    color: green;
+}
+
+.foot {
+    background-color: rgb(3, 17, 46);
+    text-align: center;
+    color: white;
+    height: 7em;
+}
+
+.foot .footInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot .footInfo button {
+    margin: 1em;
+    list-style: none;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(6, 5, 54);
+    cursor: pointer;
+}
+
+.foot .b1 {
+    color: blue;
+}
+
+.foot .b2 {
+    color: green;
+}
+
+.foot .b3 {
+    color: palevioletred;
+}
+
+.foot .blue {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .green {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .pink {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .footInfo .b1:hover {
+    background-color: blue;
+    color: white;
+}
+
+.foot .footInfo .b2:hover {
+    background-color: green;
+    color: white;
+}
+
+.foot .footInfo .b3:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+.foot .copy {
+    font-size: 16px;
+}
+
+.foot .copy p {
+    color: green;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 1310px) {
+
+
+    .sidebar {
+        position: absolute;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+    .buttons {
+        margin-top: 60px;
+        font-size: 10px;
+    }
+    .infoContact {
+        margin-top: 55px;
+        font-size: 12px;
+    }
+    
+    .form-info {
+        margin-left: 31em;
+    }
+    .form-control {
+        margin-top: 0.3em;
+        width: 21em;
+    }
+    .form-text {
+        margin: 0.4em;
+        font-size: 1.3em;
+        
+    }
+    .form-check-input {
+        width: 1em;
+        height: 1em;
+    }
+
+}
+
+@media (max-width: 1100px) {
+   
+    .infoContact {
+        margin-top: 55px;
+        font-size: 10px;
+    }
+    
+    .form-info {
+        margin-left: 31em;
+    }
+    .form-control {
+        margin-top: 0.3em;
+        width: 21em;
+    }
+    .form-text {
+        margin: 0.4em;
+        font-size: 1.3em;
+        
+    }
+    .form-check-input {
+        width: 1em;
+        height: 1em;
+    }
+
+}
+@media (max-width: 850px) {
+   
+    
+    .form-info {
+        margin-left: 19em;
+    }
+   
+
+}
+@media (max-width: 750px) {
+   
+    
+    .form-info {
+        margin-left: 11em;
+    }
+   
+
+}
+
+@media (max-width: 600px) {
+    .infoContact {
+        margin-top: 55px;
+        font-size: 6px;
+    }
+    
+    .form-info {
+        margin-left: 7em;
+        margin-top: 6em;
+    }
+    .form-label {
+        font-size: 3em;
+    }
+    .form-control {
+        margin-top: 0.5em;
+    }
+    .form-text {
+        margin: 0.6em;
+        font-size: 1.6em;
+        
+    }
+    .form-check-input {
+        width: 0.8em;
+        height: 0.8em;
+    }
+    .form-check {
+        margin-top: 1.7em;
+        font-size: 2em;
+        
+    }
+
+}

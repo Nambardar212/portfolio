@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.div1{
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    background-color: rgb(65, 65, 71);
+}
+
+.sidebar {
+    background-color: rgb(65, 65, 71);
+    font-family: "Fira Sans", sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: green;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.main {
+    background-color: #282828;
+    /* background-color: black; */
+    width: 100%;
+    color: green;
+    height: 100%;
+}
+
+.hamBur {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    margin: 10px;
+}
+.profile{
+    font-size: 16px;
+}
+.cross {
+    margin-left: 150px;
+}
+
+.main-container {
+    margin: 20px auto;
+    padding: 0 25px;
+    text-align: center;
+    max-width: 1600px;
+}
+
+section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-top: 8vh;
+}
+
+.section-description {
+    font-family: "Source Code Pro", monospace;
+    margin: 20px auto 0 auto;
+    max-width: 1000px;
+    
+    line-height: 1.5em;
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.pageTitle {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Fira Mono', monospace;
+}
+
+.pageTitle h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.p1 {
+    font-family: inherit;
+    font-size: 0.8em;
+    font-weight: inherit;
+    color: darkred;
+}
+
+section .hyperlink {
+    color: darkred;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+section .hyperlink:hover {
+    color: green;
+}
+
+.profile-container {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.me-icon-container {
+    width: 342px;
+    height: 342px;
+    object-fit: contain;
+    text-align: center;
+    margin-top: 26px;
+    margin-left: 90px;
+    
+}
+
+.me-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.terminal-container {
+    max-width: 700px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.terminal-header {
+    padding: 5px 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0;
+    background-color: green;
+}
+
+#terminal-title {
+    font-weight: 700;
+    color: #1D263B;
+    letter-spacing: 0.1em;
+}
+
+.right-side-buttons i {
+    color: #1D263B;
+}
+
+.right-side-buttons i:not(:last-child) {
+    margin-right: 10px;
+}
+
+.terminal-window {
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    text-align: left;
+    border: 1px solid green;
+}
+
+.terminal-window div,
+.terminal-window div p {
+    font-family: "Source Code Pro", monospace;
+    letter-spacing: 0.02em;
+}
+
+.terminal-window div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.terminal-window div p {
+    margin-bottom: 0.25em;
+    color: white;
+}
+.terminal-window .green {
+    color: darkred;
+}
+.input::before {
+    content: ">\A0";
+    color: green;
+    font-weight: 700;
+}
+
+.bottom span {
+    content: "\A0";
+    border-right: 12px solid;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+.education-achivement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 7em;
+}
+.education {
+    text-align: justify;
+}
+h3 {
+    margin: 0 1em;
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+}
+h3 span {
+    margin: 0.3em;
+}
+.card-info {
+    margin-left: 1.2em;
+}
+.g1 {
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: 700;
+    color: green;
+    letter-spacing: 0.02em;
+    font-family: "Fira Sans", sans-serif;
+}
+.date {
+    font-style: italic;
+    margin-top: 0.5em;
+    font-size: 0.75em;
+    font-weight: 700;
+    font-family: "Source Code Pro", monospace;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+    color: white;
+}
+.card-info .p2 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+    color: white;
+}
+
+.achivement .d1 {
+    margin-top: 1em;
+    margin-left: 1.2em;
+}
+.achivement .d1 p {
+    font-family: "Source Code Pro", monospace;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.8em;
+}
+.achivement p::before {
+    content: ">\A0";
+    color: green;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.foot {
+    background-color: rgb(3, 17, 46);
+    text-align: center;
+    color: white;
+    height: 7em;
+}
+
+.foot .footInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot .footInfo button {
+    margin: 1em;
+    list-style: none;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(6, 5, 54);
+    cursor: pointer;
+}
+
+.foot .b1 {
+    color: blue;
+}
+
+.foot .b2 {
+    color: green;
+}
+
+.foot .b3 {
+    color: palevioletred;
+}
+
+.foot .blue {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .green {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .pink {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .footInfo .b1:hover {
+    background-color: blue;
+    color: white;
+}
+
+.foot .footInfo .b2:hover {
+    background-color: green;
+    color: white;
+}
+
+.foot .footInfo .b3:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+.foot .copy {
+    font-size: 16px;
+}
+
+.foot .copy p {
+    color: green;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+@media (max-width: 1310px) {
+
+    .sidebar {
+        position: absolute;
+    }
+
+    .pageTitle h2 {
+        font-size: 2.5em;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1230px) {
+   
+    .profile {
+        font-size: 17px;
+    }
+    .profile-container {
+        margin: 50px auto 0 auto;
+        flex-direction: column;
+        width: 70%;
+    }
+    .terminal-container {
+        flex-grow: 1;
+        margin: 20px;
+    }
+    .me-icon-container {
+        width: 300px;
+        height: auto;
+    }
+    .education-achivement {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2em;
+    }
+    .card-info {
+        width: 60%;
+    }
+    .achivement {
+        width: 60%;
+        margin-top: 0;
+    }
+    .section-description {
+        margin: 15px auto 0 auto;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .profile {
+        font-size: 14px;
+    }
+    .section-description {
+        margin: 15px auto 0 auto;
+        font-size: 14px;
+    }
+    .profile-container {
+        margin: 10px auto 0 auto;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+    .me-icon {
+        margin-right: 80px;
+        width: 180px;
+    }
+    .terminal-container {
+        width: 250px;
+        height: auto;
+    }
+    .education-achivement {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .card-info {
+        width: 50%;
+        margin-left: 0.25em;
+    }
+    .achivement {
+        width: 70%;
+        margin-top: 0;
+    }
+    h3 {
+        margin: 0;
+        font-size: 1.1em;
+    }
+    h3 span {
+        margin: 0;
+    }
+   
+}

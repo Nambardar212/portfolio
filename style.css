@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.div1 {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(65, 65, 71);
+}
+
+.sidebar {
+    background-color: rgb(65, 65, 71);
+    font-family: "Fira Sans", sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: green;
+}
+
+.main {
+    background-color: #0D1117;
+    width: 100%;
+    color: green;
+    height: 100vh;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamBur {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    margin: 10px;
+}
+
+.cross {
+    margin-left: 150px;
+}
+
+.infoContainer {
+    height: 50vh;
+    width: 72vw;
+    margin: 145px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Source Code Pro", monospace;
+    font-size: 16px;
+}
+
+.hello {
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: none;
+}
+
+.name {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.name span {
+    color: darkred;
+}
+
+.about {
+    font-size: 1.8em;
+}
+
+.moreabout {
+    text-align: justify;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.buttons {
+    margin-top: 2.5em;
+    font-size: 16px;
+}
+
+.buttons .btn {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: #0D1117;
+    background-color: green;
+    border: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.buttons .btn:hover {
+    background-color: black;
+    color: green;
+}
+
+.devpic {
+    background-image: url("/fonts/1G.gif");
+    background-size: cover;
+    width: 60vw;
+    height: 55.5vh;
+}
+
+#logo {
+    width: 73px;
+    height: 64px;
+}
+
+#logo :hover .logo {
+    animation: a 2.5s 1;
+    transition: fill ease;
+}
+
+#logo :hover .circle {
+    animation: b 2.5s 1;
+}
+
+.logo {
+    fill: green;
+    stroke: green;
+    stroke-width: 3px;
+    stroke-dasharray: 3115px;
+}
+
+@keyframes a {
+    0% {
+        stroke-dashoffset: 3115;
+        fill: transparent;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+
+    to {
+        fill: green;
+    }
+}
+
+.circle {
+    fill: green;
+    stroke-dasharray: 80px;
+}
+
+@keyframes b {
+    0% {
+        fill: transparent;
+    }
+
+    50% {
+        fill: transparent;
+    }
+
+    to {
+        fill: green;
+    }
+}
+
+.foot {
+    background-color: rgb(3, 17, 46);
+    text-align: center;
+    color: white;
+    height: 7em;
+}
+
+.foot .footInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot .footInfo button {
+    margin: 1em;
+    list-style: none;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(6, 5, 54);
+    cursor: pointer;
+}
+
+.foot .b1 {
+    color: blue;
+}
+
+.foot .b2 {
+    color: green;
+}
+
+.foot .b3 {
+    color: palevioletred;
+}
+
+.foot .blue {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .green {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .pink {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .footInfo .b1:hover {
+    background-color: blue;
+    color: white;
+}
+
+.foot .footInfo .b2:hover {
+    background-color: green;
+    color: white;
+}
+
+.foot .footInfo .b3:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+.foot .copy {
+    font-size: 16px;
+}
+
+.foot .copy p {
+    color: green;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 1310px) {
+
+    .devInfo,
+    .copy {
+        font-size: 10px;
+    }
+
+    #logo {
+        margin-top: 20px;
+    }
+
+    .buttons {
+        margin-top: 60px;
+        font-size: 9px;
+    }
+
+    .sidebar {
+        position: absolute;
+    }
+
+    .devpic {
+        display: none;
+    }
+}
