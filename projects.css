@@ -75,6 +75,7 @@
     font-weight: bold;
     color: darkred;
 }
+
 .green {
     color: #7EB77F;
 }
@@ -83,6 +84,7 @@
     padding-top: 100px;
     max-width: 1200px;
 }
+
 .page-title {
     margin: 0 auto;
     display: flex;
@@ -96,16 +98,18 @@
     margin-right: 20px;
     margin-top: 10px;
 }
+
 .page-title h2 {
     font-size: 4em;
     font-weight: bold;
     font-family: "Fira Sans", sans-serif;
 }
+
 .project-cards-container {
-    margin-top: 50px;
+    margin-top: 80px;
     height: fit-content;
-    height: -moz-fit-content;
 }
+
 section {
     margin: 0 auto;
     display: flex;
@@ -114,6 +118,7 @@ section {
     text-align: left;
     padding-top: 8vh;
 }
+
 section .hyperlink {
     color: darkred;
     font-weight: 700;
@@ -135,6 +140,12 @@ section .hyperlink:hover {
     font-family: "Source Code Pro", monospace;
     font-weight: 900;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 .card {
     display: inline-flex;
     flex-direction: column;
@@ -142,7 +153,11 @@ section .hyperlink:hover {
 }
 
 .card:not(:last-child) {
-    margin: 0 auto 2em auto;
+    margin: 0 1em 2em auto;
+}
+
+.card:last-child {
+    margin: 0 auto 2em 1em;
 }
 
 .card-preview-img {
@@ -167,6 +182,7 @@ section .hyperlink:hover {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    font-family: "Fira Sans", sans-serif;
 }
 
 .project-title {
@@ -194,7 +210,7 @@ section .hyperlink:hover {
 .project-links a i:hover {
     font-size: 1.25em;
     padding: 2px 5px;
-    color: #7EB77F;
+    color: green;
 }
 
 .project-links a:last-child {
@@ -212,6 +228,7 @@ section .hyperlink:hover {
     font-weight: 700;
     font-size: 0.9em;
     letter-spacing: 0.05em;
+    font-family: "Fira Sans", sans-serif;
 }
 
 .project-skills span:not(:last-child) {
@@ -220,6 +237,8 @@ section .hyperlink:hover {
 
 .project-description {
     color: #1D263B;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
 }
 
 
@@ -311,6 +330,46 @@ section .hyperlink:hover {
     .copy {
         font-size: 10px;
     }
-  
 
+
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .card:not(:last-child) {
+        margin: 0 auto 2em auto;
+    }
+
+    .card:last-child {
+        margin: 0 auto 2em auto;
+    }
+
+    .page-title h2 {
+        font-size: 3em;
+    }
+
+    .red {
+        font-size: 0.6em;
+    }
+
+    .page-title {
+        margin: 0;
+    }
+
+    .page-title img {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .section-description {
+        margin: 28px auto 0 auto;
+        font-size: 1.2em;
+    }
+
+    .project-cards-container {
+        margin-top: 40px;
+    }
 }
