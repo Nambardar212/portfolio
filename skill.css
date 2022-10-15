@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.div1 {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(65, 65, 71);
+}
+
+.sidebar {
+    background-color: rgb(65, 65, 71);
+    font-family: "Fira Sans", sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: green;
+}
+
+.main {
+    background-color: #000009;
+    width: 100%;
+    color: green;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamBur {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    margin: 10px;
+}
+
+.cross {
+    margin-left: 150px;
+}
+
+.info-skills {
+    height: 100%;
+    width: 100%;
+}
+
+.skill-section {
+
+    margin: 20px auto;
+    padding: 0 25px;
+    text-align: center;
+    max-width: 1600px;
+}
+
+.section-title {
+    font-size: 4em;
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+    word-spacing: 12px;
+    color: green;
+
+    letter-spacing: 2px;
+
+}
+
+.section-title span {
+    font-size: 0.6em;
+    color: darkred;
+}
+
+
+
+.skill {
+    margin: 100px 0;
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: wrap;
+
+}
+
+.co-left {
+    width: 35vw;
+
+}
+
+.col-right {
+    width: 35vw;
+
+}
+
+.para {
+    margin-top: 0.5em;
+}
+
+.para p {
+    text-align: left;
+    float: left;
+
+    visibility: visible;
+    width: auto;
+    font-size: 1em;
+
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+    line-height: 1.2em;
+}
+
+.para p span {
+    color: green;
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+}
+
+.intro-name {
+
+    font-size: 2em;
+    text-align: left;
+    color: white;
+    letter-spacing: 0.02em;
+    font-weight: bold;
+}
+
+.para2 {
+    margin-top: 7.5em;
+}
+
+.skills-data {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+
+    box-shadow: 0 4px 25px white;
+
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    width: 100%;
+}
+
+.skills-html {
+    width: 80%;
+
+    background-color: #ff6b10;
+    ;
+}
+
+.skills-css {
+    width: 65%;
+    background-color: #2196f3;
+    ;
+}
+
+.skills-js {
+    width: 75%;
+    background-color: #ffdf00;
+    ;
+}
+
+.skills-ui-ux {
+    width: 85%;
+    background-color: #ff6b10;
+    ;
+}
+
+.skills-c {
+    width: 50%;
+    background-color: #1768a8;
+    ;
+}
+
+.bx {
+    font-family: 'boxicons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+
+}
+
+
+.skills-names {
+    display: flex;
+}
+
+.skills-icon1 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #ff6b10;
+}
+
+.skills-icon2 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #2196f3;
+}
+
+.skills-icon3 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #ffdf00;
+}
+
+.skills-icon4 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #ff6b10;
+}
+
+.skills-icon5 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #1768a8;
+}
+
+.skills-name {
+    font-size: 0.8em;
+}
+
+.skills-percentage {
+    font-size: 0.8em;
+}
+
+.skills-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: 1;
+
+}
+
+.skill2 {
+    background-image: url("/fonts/skills.gif");
+    background-size: cover;
+    width: 35vw;
+    height: 67vh;
+    box-shadow: 0 0 25px 7px #222f6d;
+    border-radius: 25px;
+
+
+}
+
+.tech-stack h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    border-bottom: 2px solid white;
+    width: 5em;
+}
+
+.tech-stack-container {
+    margin: 50px auto 30px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill1 {
+    border-radius: 12px;
+    margin: 10px;
+    border: 2px solid green;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.skill1 img {
+    width: 1.5em;
+}
+
+.skill1 span {
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: "Source Code Pro", monospace;
+    color: white;
+}
+
+.foot {
+    background-color: rgb(3, 17, 46);
+    text-align: center;
+    color: white;
+    height: 7em;
+}
+
+.foot .footInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot .footInfo button {
+    margin: 1em;
+    list-style: none;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(6, 5, 54);
+    cursor: pointer;
+}
+
+.foot .b1 {
+    color: blue;
+}
+
+.foot .b2 {
+    color: green;
+}
+
+.foot .b3 {
+    color: palevioletred;
+}
+
+.foot .blue {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .green {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .pink {
+    margin-top: 0.1em;
+    font-size: 1em;
+}
+
+.foot .footInfo .b1:hover {
+    background-color: blue;
+    color: white;
+}
+
+.foot .footInfo .b2:hover {
+    background-color: green;
+    color: white;
+}
+
+.foot .footInfo .b3:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+.foot .copy {
+    font-size: 16px;
+}
+
+.foot .copy p {
+    color: green;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 1310px) {
+
+
+    .sidebar {
+        position: absolute;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+
+
+}
+
+
+@media (max-width: 1200px) {
+    .skill2 {
+        width: 35vw;
+        height: 60vh;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .skill-section {
+        padding-top: 70px;
+    }
+
+    .skill {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+
+        align-items: center;
+        margin-top: 4em;
+    }
+
+    .col-right {
+        width: 70vw;
+        height: 75vh;
+    }
+
+    .skill2 {
+        width: 70vw;
+        height: 70vh;
+    }
+
+    .co-left {
+        margin-top: 2em;
+        width: 70vw;
+    }
+
+    .tech-stack {
+        margin-top: -4em;
+    }
+
+    .para p {
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+
+    .para2 {
+        margin-top: 10.5em;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .section-title {
+        font-size: 3em;
+    }
+
+    .skill2 {
+        width: 62vw;
+        height: 36vh;
+    }
+
+    .col-right {
+        width: 70vw;
+        height: 36vh;
+    }
+
+    .para2 {
+        margin-top: 11em;
+    }
+
+}
